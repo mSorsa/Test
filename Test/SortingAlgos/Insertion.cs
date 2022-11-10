@@ -1,4 +1,4 @@
-﻿namespace Test;
+﻿namespace Test.SortingAlgos;
 
 internal class Insertion
 {
@@ -12,15 +12,18 @@ internal class Insertion
     {
         for (int i = 1; i < arr.Length; i++)
         {
+            // Set the current element as the key
             int j = i;
             while (j > 0 && arr[j - 1] > arr[j])
             {
+                // Swap the elements
                 int temp = arr[j];
                 arr[j] = arr[j - 1];
                 arr[j - 1] = temp;
                 j--;
             }
         }
+        
         return arr;
     }
 }

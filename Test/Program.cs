@@ -8,7 +8,7 @@ int valueToFind = 7;    // The value to find in the array
 // Save original position of the value to find
 int itemOriginalPosition = Array.IndexOf(unsortedArray, valueToFind);
 // Sort the array
-var sortedArray = Quick.QuickSortAlgorithm(unsortedArray, 0, unsortedArray.Length - 1);
+var sortedArray = Insertion.Sort(unsortedArray);
 
 // Print the sorted array
 sortedArray.ToList().ForEach(x => Console.WriteLine(x));
