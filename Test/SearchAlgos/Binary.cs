@@ -27,13 +27,13 @@ internal class Binary
                 // return the index
                 return mid;
             }
-            // If the target is greatere than the middle element
+            // If the target is greater than the middle element
             else if (arr[mid] < target)
             {
                 // Check the values to the right of the middle (upper half of array)
                 left = mid + 1;
             }
-            // If the target is less than the middle element
+            // If the target is less than the target
             else
             {
                 // Check the values on the left of the middle (lower half of array)
