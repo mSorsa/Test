@@ -8,10 +8,10 @@ internal class Quick
     /// </summary>
     /// <param name="arr"></param>
     /// <returns></returns>
-    internal static int[] QuickSort(int[] arr)
+    internal static int[] Sort(int[] arr)
     {
         var clone = arr.Clone() as int[];
-        QuickSortAlgorithm(arr: clone, leftIndex: 0, rightIndex: clone.Length - 1);
+        Algorithm(arr: clone, leftIndex: 0, rightIndex: clone.Length - 1);
         return clone;
     }
 
@@ -20,8 +20,8 @@ internal class Quick
     /// Modifies the given array and sorts according to Quick-sort algo.
     /// </summary>
     /// <param name="arr"></param>
-    internal static void QuickSortNonAlloc(int[] arr)
-        => QuickSortAlgorithm(arr: arr, leftIndex: 0, rightIndex: arr.Length - 1);
+    internal static void SortNonAlloc(int[] arr)
+        => Algorithm(arr: arr, leftIndex: 0, rightIndex: arr.Length - 1);
 
     /// <summary>
     /// Recursive Quick-sort algorithm.
@@ -31,16 +31,16 @@ internal class Quick
     /// <param name="leftIndex"></param>
     /// <param name="rightIndex"></param>
     /// <returns></returns>
-    private static void QuickSortAlgorithm(int[] arr, int leftIndex, int rightIndex)
+    private static void Algorithm(int[] arr, int leftIndex, int rightIndex)
     {
         if (leftIndex < rightIndex)
         {
             // Partition the array and get the pivot index
             int pivotIndex = Partition(arr, leftIndex, rightIndex);
             // Sort the left side of the pivot
-            QuickSortAlgorithm(arr, leftIndex, pivotIndex - 1);
+            Algorithm(arr, leftIndex, pivotIndex - 1);
             // Sort the right side of the pivot
-            QuickSortAlgorithm(arr, pivotIndex + 1, rightIndex);
+            Algorithm(arr, pivotIndex + 1, rightIndex);
         }
     }
 
