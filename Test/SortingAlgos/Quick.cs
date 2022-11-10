@@ -58,6 +58,6 @@ internal class Quick
         arr[rightIndex] = temp2;
 
         // Return the pivot index
-        return i + 1;
+        return ++i;
     }
 }
