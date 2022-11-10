@@ -3,6 +3,27 @@
 internal class Quick
 {
     /// <summary>
+    /// Credit: bgsulz
+    /// Clones the given array such that we do not modify the original array.
+    /// </summary>
+    /// <param name="arr"></param>
+    /// <returns></returns>
+    internal static int[] QuickSort(int[] arr)
+    {
+        var clone = arr.Clone() as int[];
+        QuickSortAlgorithm(arr: clone, leftIndex: 0, rightIndex: clone.Length - 1);
+        return clone;
+    }
+
+    /// <summary>
+    /// Credit: bgsulz
+    /// Modifies the given array and sorts according to Quick-sort algo.
+    /// </summary>
+    /// <param name="arr"></param>
+    internal static void QuickSortNonAlloc(int[] arr)
+        => QuickSortAlgorithm(arr: arr, leftIndex: 0, rightIndex: arr.Length - 1);
+
+    /// <summary>
     /// Recursive Quick-sort algorithm.
     /// Runtime: O(n log n)
     /// </summary>
@@ -10,7 +31,7 @@ internal class Quick
     /// <param name="leftIndex"></param>
     /// <param name="rightIndex"></param>
     /// <returns></returns>
-    internal static int[] QuickSortAlgorithm(int[] arr, int leftIndex, int rightIndex)
+    private static void QuickSortAlgorithm(int[] arr, int leftIndex, int rightIndex)
     {
         if (leftIndex < rightIndex)
         {
@@ -21,7 +42,6 @@ internal class Quick
             // Sort the right side of the pivot
             QuickSortAlgorithm(arr, pivotIndex + 1, rightIndex);
         }
-        return arr;
     }
 
     /// <summary>

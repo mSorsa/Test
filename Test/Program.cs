@@ -5,11 +5,12 @@ using Test.SortingAlgos;
 int[] unsortedArray = new int[] { 5, 10, 2, 3, 25, 18, 19, 20, 21, 11, 1, 6, 7, 16, 17, 12, 13, 14, 15, 23, 24, 8, 9, 4, 22 };
 int valueToFind = 17;    // The value to find in the array   // Must exist in the unsortedArray!
 
+// Sort the array
+var sortedArray = Quick.QuickSort(arr:unsortedArray);
+// var sortedArray = Insertion.Sort(unsortedArray);     // Alternate sorting algo.
+
 // Save original position of the value to find
 int itemOriginalPosition = Array.IndexOf(unsortedArray, valueToFind);
-// Sort the array
-var sortedArray = Quick.QuickSortAlgorithm(arr:unsortedArray, leftIndex:0, rightIndex:unsortedArray.Length - 1);
-// var sortedArray = Insertion.Sort(unsortedArray);     // Alternate sorting algo.
 
 // Print the sorted array
 sortedArray.ToList().ForEach(x => Console.WriteLine(x));
