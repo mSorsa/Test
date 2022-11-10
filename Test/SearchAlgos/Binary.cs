@@ -4,6 +4,7 @@ internal class Binary
 {
     /// <summary>
     /// Binary search algorithm.
+    /// Assume array is sorted.
     /// Runtime: O(log n)
     /// </summary>
     /// <param name="arr"></param>
