@@ -4,6 +4,7 @@ internal class Insertion
 {
     /// <summary>
     /// Insertion sort algorithm.
+    /// Runtime: O(n^2)
     /// </summary>
     /// <param name="arr"></param>
     /// <returns></returns>
