@@ -25,7 +25,7 @@ internal class Quick
 
     /// <summary>
     /// Recursive Quick-sort algorithm.
-    /// Runtime: O(n log n)
+    /// Runtime: O(n^2) worst case, O(n log n) average.
     /// </summary>
     /// <param name="arr"></param>
     /// <param name="leftIndex"></param>

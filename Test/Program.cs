@@ -6,7 +6,8 @@ int[] unsortedArray = new int[] { 5, 10, 2, 3, 25, 18, 19, 20, 21, 11, 1, 6, 7, 
 int valueToFind = 17;    // The value to find in the array   // Must exist in the unsortedArray!
 
 // Sort the array
-var sortedArray = Quick.Sort(arr:unsortedArray);
+var sortedArray = Heap.Sort(unsortedArray);
+// var sortedArray = Quick.Sort(arr:unsortedArray);     // Alternate sorting algo.
 // var sortedArray = Insertion.Sort(unsortedArray);     // Alternate sorting algo.
 
 // Save original position of the value to find

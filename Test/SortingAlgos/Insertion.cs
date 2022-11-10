@@ -3,12 +3,25 @@
 internal class Insertion
 {
     /// <summary>
+    /// Credit: bgsulz
+    /// Clones the given array such that we do not modify the original array.
+    /// </summary>
+    /// <param name="arr"></param>
+    /// <returns></returns>
+    internal static int[] Sort(int[] arr)
+    {
+        var clone = arr.Clone() as int[];
+        Algorithm(arr: clone);
+        return clone;
+    }
+    
+    /// <summary>
     /// Insertion sort algorithm.
     /// Runtime: O(n^2)
     /// </summary>
     /// <param name="arr"></param>
     /// <returns></returns>
-    internal static int[] Sort(int[] arr)
+    private static int[] Algorithm(int[] arr)
     {
         for (int i = 1; i < arr.Length; i++)
         {
@@ -23,7 +36,6 @@ internal class Insertion
                 j--;
             }
         }
-        
         return arr;
     }
 }
