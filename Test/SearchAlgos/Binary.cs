@@ -25,12 +25,12 @@ internal class Binary
             {
                 return mid;
             }
-            // If the target is less than the middle element
+            // If the target is greatere than the middle element
             else if (arr[mid] < target)
             {
                 left = mid + 1;
             }
-            // If the target is greater than the middle element
+            // If the target is less than the middle element
             else
             {
                 right = mid - 1;
