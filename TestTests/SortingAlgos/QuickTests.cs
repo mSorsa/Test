@@ -20,12 +20,11 @@ public class QuickTests
     [DataRow(new int[] {2, 4, 8, 16, 1, 12})]
     public void QuickSortTest_2_Valid(int[] input)
     {
-        // Arrange
         var expected = input.Clone() as int[];
         Array.Sort(expected);
-        // Act
+
         var actual = Quick.Sort(input);
-        // Assert
+
         CollectionAssert.AreEqual(expected, actual);
     }
 
@@ -33,12 +32,10 @@ public class QuickTests
     [DataRow(new int[] { 2, -4, 8, 16, -1, 12 })]
     public void QuickSortTest_3_Valid(int[] input)
     {
-        // Arrange
         var expected = input.Clone() as int[];
         Array.Sort(expected);
-        // Act
         var actual = Quick.Sort(input);
-        // Assert
+
         CollectionAssert.AreEqual(expected, actual);
     }
 
