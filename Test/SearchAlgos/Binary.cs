@@ -20,7 +20,7 @@ internal class Binary
             // Set the middle index
             int mid = (left + right) / 2;
             
-            // If the target is less than the middle element
+            // If the target is equal to the middle element
             if (arr[mid] == target)
             {
                 return mid;
