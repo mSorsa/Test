@@ -17,7 +17,7 @@ internal class Binary
         // While there are still 'nodes' to check...
         while (left <= right)
         {
-            // Set the middle index
+            // Find the average of the left and right indices
             int mid = (left + right) / 2;
             
             // If the target is equal to the middle element
