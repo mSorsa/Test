@@ -24,16 +24,19 @@ internal class Binary
             // If the target is equal to the middle element
             if (arr[mid] == target)
             {
+                // return the index
                 return mid;
             }
             // If the target is greatere than the middle element
             else if (arr[mid] < target)
             {
+                // Check the values to the right of the middle (upper half of array)
                 left = mid + 1;
             }
             // If the target is less than the middle element
             else
             {
+                // Check the values on the left of the middle (lower half of array)
                 right = mid - 1;
             }
         }
