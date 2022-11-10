@@ -1,6 +1,6 @@
 ﻿namespace Test.SortingAlgos;
 
-internal class Heap
+public class Heap
 {
     /// <summary>
     /// Credit: bgsulz
@@ -8,7 +8,7 @@ internal class Heap
     /// </summary>
     /// <param name="arr"></param>
     /// <returns></returns>
-    internal static int[] Sort(int[] arr){
+    public static int[] Sort(int[] arr){
         var clone = arr.Clone() as int[];
         Algorithm(arr: clone, leftIndex: 0, rightIndex: clone.Length - 1);
         return clone;
