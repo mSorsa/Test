@@ -1,16 +1,17 @@
 ﻿namespace Test.SearchAlgos;
 
-internal class Binary
+public class Binary
 {
     /// <summary>
     /// Binary search algorithm.
     /// Assume array is sorted.
+    /// Return index of target value if found.
     /// Runtime: O(log n)
     /// </summary>
     /// <param name="arr"></param>
     /// <param name="target"></param>
     /// <returns></returns>
-    internal static int Search(int[] arr, int target)
+    public static int Search(int[] arr, int target)
     {
         int left = 0;
         int right = arr.Length - 1;
