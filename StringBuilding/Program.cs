@@ -20,7 +20,6 @@ while (bt)
     }
     else
     {
-        Console.WriteLine("Invalid input!");
         Console.WriteLine("Exiting program...");
         bt = false;
     }
