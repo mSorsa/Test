@@ -31,13 +31,13 @@ public class SBSpeedChecker
     public double NormalStringAppendSpeed(int iterations)
     {
         // Instantiate the string as empty.
-        string output = "";
+        string buf = "";
         // Start the stopwatch
         var sw = new Stopwatch();
         sw.Start();
         
         for (int i = 0; i < iterations; i++)
-            output += i;
+            buf += i;    // Append i to the string
 
         // Stop stopwatch
         sw.Stop();
