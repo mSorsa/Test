@@ -8,9 +8,9 @@ public class Binary
     /// Return index of target value if found.
     /// Runtime: O(log n)
     /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// <param name="arr">Sorted array.</param>
+    /// <param name="target">Target value to be found.</param>
+    /// <returns>Returns the index in the array where target is found. Else returns -1.</returns>
     public static int Search(int[] arr, int target)
     {
         int left = 0;

@@ -3,11 +3,11 @@
 public class Insertion
 {
     /// <summary>
-    /// Credit: bgsulz
+    /// Credit: @bgsulz
     /// Clones the given array such that we do not modify the original array.
     /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// <param name="arr">Array to sort.</param>
+    /// <returns>Returns a new, sorted, array.</returns>
     public static int[] Sort(int[] arr)
     {
         var clone = arr.Clone() as int[];
@@ -19,8 +19,8 @@ public class Insertion
     /// Insertion sort algorithm.
     /// Runtime: O(n^2)
     /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// <param name="arr">Array to be sorted.</param>
+    /// <returns>Returns arr sorted.</returns>
     private static int[] Algorithm(int[] arr)
     {
         for (int i = 1; i < arr.Length; i++)

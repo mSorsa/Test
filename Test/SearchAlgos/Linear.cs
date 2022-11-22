@@ -7,9 +7,9 @@ public class Linear
     /// Return the index of the target value if found.
     /// Runtime: O(n)
     /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="target"></param>
-    /// <returns></returns>
+    /// <param name="arr">The array we are searching</param>
+    /// <param name="target">The value we are searching for</param>
+    /// <returns>Returns the index where the target value can be found. If target could not be found, returns -1.</returns>
     public static int Search(int[] arr, int target)
     {
         // Loop through the array

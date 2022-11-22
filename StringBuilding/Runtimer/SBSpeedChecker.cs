@@ -11,15 +11,17 @@ public class SBSpeedChecker
     {
         // Instantiate the stringbuilder as buffer
         StringBuilder buf = new();
+        
         // Start the stopwatch
         var sw = new Stopwatch();
         sw.Start();
         
         for (int i = 0; i < iterations; i++)
-            buf.Append(i);  // Append the number to the stringbuilder
+            buf.Append(i);  // Append i to the stringbuilder
 
         // Stop the stopwatch
         sw.Stop();
+        
         return sw.Elapsed.TotalMilliseconds;
     }
     
@@ -32,6 +34,7 @@ public class SBSpeedChecker
     {
         // Instantiate the string as empty.
         string buf = "";
+        
         // Start the stopwatch
         var sw = new Stopwatch();
         sw.Start();
@@ -41,6 +44,7 @@ public class SBSpeedChecker
 
         // Stop stopwatch
         sw.Stop();
+        
         return sw.Elapsed.TotalMilliseconds;
     }
 }

@@ -6,8 +6,8 @@ public class Heap
     /// Credit: bgsulz
     /// Clones the given array such that we do not modify the original array.
     /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// <param name="arr">Array to be sorted.</param>
+    /// <returns>Returns the sorted array.</returns>
     public static int[] Sort(int[] arr){
         var clone = arr.Clone() as int[];
         Algorithm(arr: clone, leftIndex: 0, rightIndex: clone.Length - 1);
@@ -18,9 +18,9 @@ public class Heap
     /// Heapsort algorithm
     /// Runtime: O(n log n) 
     /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="leftIndex"></param>
-    /// <param name="rightIndex"></param>
+    /// <param name="arr">Array to be sorted.</param>
+    /// <param name="leftIndex">Left-most element.</param>
+    /// <param name="rightIndex">Right-most element.</param>
     private static void Algorithm(int[] arr, int leftIndex, int rightIndex)
     {        
         // Build the heap

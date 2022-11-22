@@ -6,8 +6,8 @@ public class Quick
     /// Credit: bgsulz
     /// Clones the given array such that we do not modify the original array.
     /// </summary>
-    /// <param name="arr"></param>
-    /// <returns></returns>
+    /// <param name="arr">Array to sort.</param>
+    /// <returns>Returns a new sorted array.</returns>
     public static int[] Sort(int[] arr)
     {
         var clone = arr.Clone() as int[];
@@ -19,7 +19,7 @@ public class Quick
     /// Credit: bgsulz
     /// Modifies the given array and sorts according to Quick-sort algo.
     /// </summary>
-    /// <param name="arr"></param>
+    /// <param name="arr">Array to sort.</param>
     internal static void SortNonAlloc(int[] arr)
         => Algorithm(arr: arr, leftIndex: 0, rightIndex: arr.Length - 1);
 
@@ -27,9 +27,9 @@ public class Quick
     /// Recursive Quick-sort algorithm.
     /// Runtime: O(n^2) worst case, O(n log n) average.
     /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="leftIndex"></param>
-    /// <param name="rightIndex"></param>
+    /// <param name="arr">The array to sort.</param>
+    /// <param name="leftIndex">Left-most index.</param>
+    /// <param name="rightIndex">Right-most index.</param>
     /// <returns></returns>
     private static void Algorithm(int[] arr, int leftIndex, int rightIndex)
     {
@@ -47,9 +47,9 @@ public class Quick
     /// <summary>
     /// Partition the array and return the pivot index.
     /// </summary>
-    /// <param name="arr"></param>
-    /// <param name="leftIndex"></param>
-    /// <param name="rightIndex"></param>
+    /// <param name="arr">Array to sort.</param>
+    /// <param name="leftIndex">Left-most index.</param>
+    /// <param name="rightIndex">Right-most index.</param>
     /// <returns></returns>
     private static int Partition(int[] arr, int leftIndex, int rightIndex)
     {
