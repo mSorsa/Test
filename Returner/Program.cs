@@ -1,4 +1,4 @@
-﻿namespace Returner;
+﻿namespace PointersPractice;
 
 public class Program
 {

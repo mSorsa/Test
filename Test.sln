@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestTests", "TestTests\Test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StringBuilding", "StringBuilding\StringBuilding.csproj", "{B88950D0-0D0D-40C5-B36C-A421F7024531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Returner", "Returner\Returner.csproj", "{9DA6F630-9CC9-4781-AFF6-6985A5F2EA77}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PointersPractice", "Returner\PointersPractice.csproj", "{9DA6F630-9CC9-4781-AFF6-6985A5F2EA77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
