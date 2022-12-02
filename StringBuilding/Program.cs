@@ -1,7 +1,7 @@
 ﻿
 bool bt = true;
-while (bt)
-{ 
+do
+{
     Console.Write("Number of iterations to try: ");
     string input = Console.ReadLine();
     Console.WriteLine();
@@ -24,4 +24,4 @@ while (bt)
         Console.WriteLine("Exiting program...");
         bt = false;
     }
-}
+} while (bt);
