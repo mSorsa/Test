@@ -6,6 +6,9 @@ public class Program
 {
     public static void Main(string[] args)
     {
+
+        // Pretty sure this is wrong. Do not understand pointers enough at this point in time.
+
         MyReturnTester tester = new();
 
         int val = 5;
