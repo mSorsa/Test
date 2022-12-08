@@ -51,9 +51,9 @@
         // Here there be Monsters.
 
 
-        public OmegaIterator Omega
+        public ChadIterator Omega
         {
-            get { return new OmegaIterator(this); }
+            get { return new ChadIterator(this); }
         }
 
         /// <summary>
@@ -72,10 +72,10 @@
             students = students.OrderBy(s => s.Name).ToArray();
         }
         
-        public class OmegaIterator
+        public class ChadIterator
         {
             readonly Students outer;
-            internal OmegaIterator(Students outer)
+            internal ChadIterator(Students outer)
             {
                 this.outer = outer;
             }

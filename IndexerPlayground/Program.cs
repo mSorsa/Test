@@ -6,7 +6,8 @@ namespace IndexerPlayground
 {
     internal class Program
     {
-        static int numberOfStudents = 20;
+        // Number of students we will generate and work with.
+        private static readonly short numberOfStudents = 20;
         
         static void Main(string[] args)
         {
@@ -39,7 +40,7 @@ namespace IndexerPlayground
             PopulateStudents(s);
             s.OrderByAge();
 
-            Students.OmegaIterator iterator = s.Omega;
+            Students.ChadIterator iterator = s.Omega;
             {
                 using (var student = iterator.GetEnumerator())
                 {
