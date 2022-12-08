@@ -46,8 +46,10 @@
             };
         }
         
+
         // -------------------------------------------------
         // Here there be Monsters.
+
 
         public OmegaIterator Omega
         {

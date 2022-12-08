@@ -8,14 +8,12 @@
         // The array to store the values.
         private string[] array;
 
-        // The indexer.
         public string this[int index]
         {
-            get => array[index * 2];
-            set => array[index * 2] = value;
+            get => array[index];
+            set => array[index] = value;
         }
 
-        // Constructor.
         public IndexerClass(int size)
         {
             array = new string[size * 2];
