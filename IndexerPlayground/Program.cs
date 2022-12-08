@@ -21,7 +21,7 @@ namespace IndexerPlayground
             myIndexerClass[2] = "!";
 
             // Get values from the array.
-            StringBuilder buf = new();
+            StringBuilder buf = new();      // See StringBuilder-project.
             buf.Append(myIndexerClass[0]);
             buf.Append(' ');
             buf.Append(myIndexerClass[1]);
