@@ -64,7 +64,9 @@ namespace Test.SortingAlgos.Tests
             int[] arr = { 1, 2, 2, 3, 4 };
             int[] original = { 1, 2, 3, 4, 2 };
 
+            // Make sure arrays are different
             CollectionAssert.AreNotEqual(arr, original);
+            // Make sure arrays - when sorted - are equal
             CollectionAssert.AreEqual(arr, original.OrderBy(x => x).ToArray());
             Assert.IsTrue(arr.OrderBy(x => x).SequenceEqual(original.OrderBy(x => x)));
         }
