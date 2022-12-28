@@ -8,7 +8,7 @@ int valueToFind = 17;    // The value to find in the array   // Must exist in th
 
 // Sort the array
 var sortedArray = Counting.Sort(unsortedArray);
-// var sortedArray = Heap.Sort(unsortedArray);
+// var sortedArray = Heap.Sort(unsortedArray);          // Alternate sorting algo.
 // var sortedArray = Quick.Sort(arr:unsortedArray);     // Alternate sorting algo.
 // var sortedArray = Insertion.Sort(unsortedArray);     // Alternate sorting algo.
 
