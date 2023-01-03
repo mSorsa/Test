@@ -11,6 +11,7 @@ namespace IndexerPlayground
         
         static void Main(string[] args)
         {
+            #region IterIndexClass
             // MyIndexerClass-stuff
             // Instantiate and give size of array.
             IndexerClass myIndexerClass = new IndexerClass(3);
@@ -49,6 +50,12 @@ namespace IndexerPlayground
                         Console.WriteLine($"{student.Current.Name, -10}" + " is " + student.Current.Age + " years old.");
                     }
                 }
+            }
+            #endregion
+
+            foreach (int number in YieldRet.GetNumbers())
+            {
+                Console.WriteLine(number);
             }
         }
 
